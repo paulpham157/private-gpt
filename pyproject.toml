@@ -7,7 +7,7 @@ requires-python = ">=3.11,<3.12"
 dependencies = [
     # Web framework
     "fastapi[all]>=0.136.0",
-    "python-multipart>=0.0.26",
+    "python-multipart>=0.0.31",
     # DI + config
     "injector>=0.24.0,<0.25",
     "pyyaml>=6.0.3,<7",
@@ -49,7 +49,7 @@ llm-mistral = [
     "huggingface_hub",
 ]
 llm-anthropic = [
-    "langchain-anthropic>=1.4.3",
+    "langchain-anthropic>=1.4.6",
     "anthropic>=0.116.0",
 ]
 
@@ -119,7 +119,7 @@ ingest-markup = [
     "beautifulsoup4>=4.14.3,<5",
     "html2text>=2024.2.26,<2025",
     "marko>=2.2.0,<3",
-    "markdownify>=0.13.1,<0.14",
+    "markdownify>=1.2.3,<1.3",
     "lxml-html-clean>=0.4.4",
 ]
 ingest = [
@@ -248,7 +248,7 @@ tools = [
 # ---------------------------------------------------------------------------
 # media-core: shared torch base for all media-* extras
 media-core = [
-    "torch>=2.11.0,<3",
+    "torch>=2.12.1,<3",
 ]
 media-image = [
     "private-gpt[media-core]",
@@ -303,7 +303,7 @@ lint = [
     "ruff>=0,<1",
 ]
 test = [
-    "pytest>=9,<10",
+    "pytest>=9.1.1,<10",
     "pytest-asyncio>=1.3.0,<2",
     "pytest-cov>=7,<8",
     "pytest-httpx>=0.36.0",
